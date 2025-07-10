@@ -25,14 +25,9 @@ services:
       - "27017:27017"  
     networks:
       - mern_network
-    volumes:
-      - mongo-data:/data/db  
 
 networks:
   mern_network:
     driver: bridge 
 
-volumes:
-  mongo-data:
-    driver: local  # Persist MongoDB data locally
 
